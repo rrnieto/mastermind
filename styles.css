@@ -1,43 +1,23 @@
-body {
-    font-family: 'Arial', sans-serif;
+#game-container {
     text-align: center;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0; /* Color de fondo general */
+    margin: 50px;
   }
   
-  #game-container {
-    background-image: url('/resources/img/background.jpg'); /* Ruta de la imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 300px; /* Ajusta el ancho según tus preferencias */
-    height: 550px; /* Ajusta la altura según tus preferencias */
-    border-radius: 20px; /* Añadimos esquinas redondeadas */
-    margin: auto; /* Centramos horizontalmente */
-    margin-top: 20px; /* Ajusta según tus preferencias */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  #code-container, #guess-container {
+    display: inline-block;
   }
   
-  #game-board {
-    /* Puedes ajustar el margen superior e inferior según tus preferencias */
-    margin: 20px 0;
-  }
-  
-  .row {
-    margin-bottom: 10px;
-  }
-  
-  .square {
+  .code-peg, .guess-peg {
     width: 40px;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 50%;
+    margin: 5px;
     display: inline-block;
-    margin-right: 5px;
-    border: 2px solid #333;
-    background-color: #888; /* Color gris por defecto */
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
   }
   
